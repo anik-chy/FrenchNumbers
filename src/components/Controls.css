@@ -1,0 +1,67 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: left;
+}
+
+.control-group label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+}
+
+.button-group,
+.range-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button.active {
+    background: #646cff;
+    border-color: #646cff;
+    box-shadow: 0 0 15px rgba(100, 108, 255, 0.4);
+}
+
+.next-btn {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #646cff, #7b81ff);
+    border: none;
+}
+
+.next-btn:active {
+    transform: scale(0.98);
+}

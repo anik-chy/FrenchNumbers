@@ -1,0 +1,65 @@
+:root {
+    --primary: #646cff;
+    --bg-dark: #0f172a;
+    --text-main: #f8fafc;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(100, 108, 255, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(123, 129, 255, 0.1) 0px, transparent 50%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .app-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
